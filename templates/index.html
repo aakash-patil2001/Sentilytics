@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title" id="main-title">Sentiment Analysis</h1>
+        <form action="/analyze" method="post">
+            <label for="stock_symbol">Enter Stock Symbol:</label>
+            <input type="text" id="stock_symbol" name="stock_symbol" placeholder="e.g., AAPL" required>
+            <button type="submit" id="analyze-button">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>

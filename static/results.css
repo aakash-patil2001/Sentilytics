@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+/* Set the overall layout and alignment */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the main title */
+#main-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the row layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Styling for the left column */
+#left-column {
+    flex: 1;
+    text-align: left;
+}
+
+/* Styling for the right column */
+#right-column {
+    flex: 1;
+    text-align: center;
+}
+
+/* Styling for the stock symbol */
+#stock-symbol {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the overall sentiment */
+#overall-sentiment {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the positive percentage */
+#positive-percentage {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the sentiment distribution title */
+#sentiment-distribution {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the sentiment distribution image */
+#right-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    /* Reset the row layout to stack elements vertically */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Reset the alignment of the left and right columns */
+    #left-column, #right-column {
+        text-align: center;
+    }
+}
